@@ -1,4 +1,4 @@
-# Let Phil Tier 1 Final Projects
+# Let Phil Tier 2 Final Projects
 
 These projects integrate **DOM manipulation, local storage, navigation, API usage, a contact form, and responsive design** using **HTML, CSS, and JavaScript**.
 
