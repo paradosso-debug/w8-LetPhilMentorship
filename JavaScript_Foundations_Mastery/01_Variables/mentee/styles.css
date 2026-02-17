@@ -1,0 +1,77 @@
+/* Goal: Make the page feel modern and fun, while mentees focus only on JS variables. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  min-height: 100vh;
+  background: radial-gradient(
+    circle at top left,
+    #3b82f6,
+    #0f172a 55%,
+    #111827
+  );
+  color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.page {
+  max-width: 800px;
+  width: 100%;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 1.5rem;
+  padding: 2.25rem 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(148, 163, 184, 0.25);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(96, 165, 250, 0.5);
+}
+
+h1 {
+  font-size: 1.9rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  color: #cbd5f5;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.steps {
+  margin-left: 1.25rem;
+  margin-bottom: 1.75rem;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+.steps li + li {
+  margin-top: 0.35rem;
+}
+
+code {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.35rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.hint {
+  font-size: 0.95rem;
+  color: #a5b4fc;
+  border-top: 1px dashed rgba(148, 163, 184, 0.5);
+  padding-top: 1rem;
+}

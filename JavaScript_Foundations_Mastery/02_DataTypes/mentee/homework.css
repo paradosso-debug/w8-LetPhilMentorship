@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #22c55e, #0f172a);
+  color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.page {
+  max-width: 780px;
+  width: 100%;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.97);
+  border-radius: 1.75rem;
+  padding: 2.5rem 2.25rem;
+  box-shadow: 0 26px 55px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(74, 222, 128, 0.35);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(34, 197, 94, 0.8);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.subtitle {
+  color: #bbf7d0;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.instructions {
+  color: #e5e7eb;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+code {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 0.2rem 0.45rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  font-size: 0.9rem;
+}
+
+.hint {
+  font-size: 0.95rem;
+  color: #bbf7d0;
+  border-top: 1px dashed rgba(74, 222, 128, 0.65);
+  padding-top: 1rem;
+}
