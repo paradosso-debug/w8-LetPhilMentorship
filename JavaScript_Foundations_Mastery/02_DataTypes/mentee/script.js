@@ -5,7 +5,7 @@
 // ==============================================
 
 // STEP 1: Create a variable called userName as a string.
-//         Example idea: "John"
+//         Example idea: "Jane"
 
 // STEP 2: Create a variable called userAge as a number.
 //         Example idea: 32
@@ -21,6 +21,22 @@
 // STEP 6: Use console.log to print each variable and its type using typeof.
 //         Example idea (you will write something similar):
 //         console.log("userName:", userName, "type:", typeof userName);
+
+const userName = "Edgar";
+
+let userAge = 32;
+
+const isStudent = true;
+
+let favoriteColor;
+
+let chosenPet = null;
+
+console.log("userName:", userName, "type:", typeof userName);
+console.log("userAge:", userAge, "type: ", typeof userAge);
+console.log("Are you a student?", isStudent, "type: ", typeof isStudent);
+console.log("favoriteColor:", favoriteColor, "type.", typeof favoriteColor);
+console.log("chosenPet:", chosenPet, "type: ", typeof chosenPet);
 
 // ==============================================
 // TASK 2 – STRING VS NUMBER
@@ -41,6 +57,23 @@
 
 // STEP 12: For each result, also log typeof to see the type of the final value.
 
+let textFive = "5";
+
+let numberFive = 5;
+
+let textString = textFive + textFive;
+console.log(textString);
+
+let numberResult = numberFive + numberFive;
+console.log(numberResult);
+
+let stringPlusNum = "5" - 2;
+console.log(stringPlusNum);
+
+console.log("Type of textString", typeof textString);
+console.log("Type of numberResult: ", typeof numberResult);
+console.log("Type of stringPlusNum:", typeof stringPlusNum);
+
 // ==============================================
 // TASK 3 – BOOLEANS IN CONTEXT
 // ==============================================
@@ -59,6 +92,15 @@
 // STEP 16: Create one more boolean called isTired
 //          and log a message with it as well.
 
+let hadCoffee = true;
+console.log("Did you have coffee?", hadCoffee);
+
+const isOnline = true;
+console.log("Are you online right now?", isOnline);
+
+let isTired = false;
+console.log("Are you tired?", isTired);
+
 // ==============================================
 // TASK 4 – typeof QUIRKS
 // ==============================================
@@ -70,3 +112,14 @@
 // STEP 19: Use console.log to show typeof null.
 
 // STEP 20: Use console.log to show typeof undefined.
+
+let emptyString = "";
+
+console.log("typeof emptyString:", typeof emptyString);
+
+emptyString;
+console.log("emptyString not empty:", typeof emptyString);
+
+console.log("typeof null:", typeof null);
+
+console.log("typeof undefined:", typeof undefined);

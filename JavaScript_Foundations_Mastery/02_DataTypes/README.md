@@ -121,6 +121,8 @@ Later in the Operators lesson you will learn why this happens.
 
 ---
 
+---
+
 ## 8. Mini Homework -- Daily Stats Summary
 
 Goal: Practice using different data types.
