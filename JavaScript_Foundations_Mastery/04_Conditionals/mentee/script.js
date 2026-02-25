@@ -16,6 +16,14 @@
 //         In that case, console.log a message like:
 //         "No rain right now. You can leave the umbrella at home.".
 
+let isRaining = false;
+
+if (isRaining === true) {
+  console.log("It is raining. Take an umbrella! ");
+} else {
+  console.log("No rain right now. You can leave the umbrella at home.");
+}
+
 // ==============================================
 // TASK 2 – AGE CHECK (IF / ELSE)
 // ==============================================
@@ -28,6 +36,12 @@
 // STEP 6: If age >= 18, log "You are an adult.".
 //         Otherwise, log "You are a minor.".
 
+let age = 10;
+if (age >= 18) {
+  console.log("You are an adult");
+} else {
+  console.log("You are a minor");
+}
 // ==============================================
 // TASK 3 – SCORE TO GRADE (IF / ELSE IF / ELSE)
 // ==============================================
@@ -44,6 +58,19 @@
 
 // STEP 9: Test your code by changing score to different values and
 //         checking the console output.
+
+let score = 59;
+if (score >= 90) {
+  console.log("Grade A");
+} else if (score >= 80) {
+  console.log("Grade B");
+} else if (score >= 70) {
+  console.log("Grade C");
+} else if (score >= 60) {
+  console.log("Grade D");
+} else {
+  console.log("Grade F");
+}
 
 // ==============================================
 // TASK 4 – MULTIPLE CONDITIONS WITH && AND ||
@@ -71,3 +98,21 @@
 
 // STEP 16: Log a message if it is a "chill day",
 //          and another message if it is a regular day.
+
+let hasTicket = true;
+let hasPopcorn = true;
+
+if (hasTicket === true && hasPopcorn === true) {
+  console.log("Ready for the Movie. Ticket and popcorn are set");
+} else {
+  console.log("Something is missing, check ticket or popcorn");
+}
+
+let isWeekend = false;
+let hasDayOff = false;
+
+if (isWeekend === true || hasDayOff === true) {
+  console.log(" It is a chill day.");
+} else {
+  console.log("It is a regular day.");
+}
