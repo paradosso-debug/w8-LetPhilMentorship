@@ -1,4 +1,4 @@
-     <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Step 1: Add meta tag to tell the browser to use UTF-8 character encoding -->
@@ -84,10 +84,9 @@
 
     <!-- Step 17: Make sure your script.js is linked -->
 
-
-<main class="container">
-<section class="card">
-<div class="header">
+    <main class="container">
+      <section class="card">
+        <div class="header">
           <h1>Login Threat Detector</h1>
           <span class="badge">Security Scan</span>
         </div>
@@ -103,9 +102,57 @@
               <option value="yes">Yes</option>
             </select>
           </div>
-</section>
 
-</main>
+          <div>
+            <label for="recognizedDevice">Recognized Device?</label>
+            <select id="recognizedDevice">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
 
+        <button id="scanBtn" class="btn">Run Security Scan</button>
+        <p id="message" class="message"></p>
+      </section>
+
+      <aside class="card">
+        <div class="header">
+          <h1>Threat Status</h1>
+          <span class="badge">Report</span>
+        </div>
+
+        <div class="statusBox">
+          <p class="statusTitle">
+            Result: <span id="statusText" class="warn">—</span>
+          </p>
+          <p id="statusDetails" class="note">
+            Run a scan to see a security decision based on your inputs.
+          </p>
+        </div>
+
+        <div class="kv">
+          <span>Failed Attempts</span>
+          <strong id="attemptsOut">—</strong>
+        </div>
+
+        <div class="kv">
+          <span>Unusual Location</span>
+          <strong id="locationOut">—</strong>
+        </div>
+
+        <div class="kv">
+          <span>Recognized Device</span>
+          <strong id="deviceOut">—</strong>
+        </div>
+
+        <p class="note">
+          Decision rules: 5+ failed attempts locks the account. Unusual location
+          + unrecognized device triggers suspicious status.
+        </p>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
