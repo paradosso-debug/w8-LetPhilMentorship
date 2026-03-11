@@ -23,6 +23,33 @@
 
 // STEP 7: Log the final state of the fruits array.
 
+let fruits = ["Strawberry", "Orange", "Apple"];
+console.log("Original Array", fruits);
+
+fruits.push("Grape");
+console.log("After Push", fruits);
+
+fruits.unshift("Pineapple");
+console.log("After unshift", fruits);
+
+let removedFruit = fruits.pop();
+console.log("After pop", removedFruit);
+
+let removedSecondFruit = fruits.shift();
+console.log(`After shift`, removedSecondFruit);
+
+console.log("Final Array", fruits);
+
+// Using array methods with objects.
+
+// let person = {
+//   name: "John",
+//   tasks: ["Work", "eat", "gym"],
+// };
+
+// person.tasks.push("sleep");
+// console.log(person.tasks);
+
 // ==============================================
 // TASK 2 – FOREACH: SAY HELLO TO EACH ITEM
 // ==============================================
@@ -31,6 +58,12 @@
 
 // STEP 9: Use .forEach() to log a message for each mentee, for example:
 //         "Hello, (name)! Ready to code?"
+
+let mentees = ["Alice", "Bob", "Charlie"];
+
+mentees.forEach((mentee) => {
+  console.log(`Hello, ${mentee}! Ready to code?`);
+});
 
 // ==============================================
 // TASK 3 – MAP: TRANSFORM VALUES
@@ -50,6 +83,14 @@
 //          where each item is a string like "Value: X".
 
 // STEP 14: Log labeledNumbers.
+let numbers = [2, 4, 6, 8];
+let doubleNumbers = numbers.map((number) => number * 2);
+
+console.log(numbers);
+console.log(doubleNumbers);
+
+const labeledNumbers = numbers.map((number2) => `Value: ${number2}`);
+console.log(labeledNumbers);
 
 // ==============================================
 // TASK 4 – FILTER: KEEP ONLY SOME VALUES
