@@ -1,0 +1,53 @@
+/* =========================================================
+   08 — FUNCTIONS (Homework Styles)
+   Same vibe as class lab
+   ========================================================= */
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  background: #070812;
+  color: #f3f5ff;
+}
+
+.header{
+  padding: 28px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  background: linear-gradient(180deg, rgba(251,113,133,0.10), rgba(34,211,238,0.04));
+}
+.header h1{ margin: 0 0 8px 0; font-size: 28px; }
+.subtitle{ margin: 0; color: rgba(243,245,255,0.78); max-width: 900px; }
+
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.card{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.tip{
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(167,139,250,0.10);
+  border: 1px solid rgba(167,139,250,0.22);
+  color: rgba(243,245,255,0.88);
+}
+
+.footer{
+  padding: 18px;
+  text-align: center;
+  color: rgba(243,245,255,0.55);
+  border-top: 1px solid rgba(255,255,255,0.12);
+}

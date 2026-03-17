@@ -108,3 +108,5 @@ console.log(labeledNumbers);
 //          that only keeps numbers that are even (number % 2 === 0).
 
 // STEP 19: Log evenNumbers.
+
+let mixedNumbers = [];
