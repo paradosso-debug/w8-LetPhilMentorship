@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: linear-gradient(135deg, #0f172a, #38bdf8, #4f46e5);
+  color: #e0f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.page {
+  max-width: 920px;
+  width: 100%;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: 1.9rem;
+  padding: 2.6rem 2.4rem;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.65),
+    0 0 0 1px rgba(129, 140, 248, 0.5);
+  border: 1px solid rgba(59, 130, 246, 0.9);
+}
+
+#profileNameDisplay {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.mood-line,
+.color-line {
+  margin-bottom: 0.4rem;
+  color: #c7d2fe;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.9rem;
+  margin: 1.4rem 0;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #bfdbfe;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(148, 163, 184, 0.9);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e0f2fe;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: rgba(129, 140, 248, 0.95);
+  box-shadow: 0 0 0 1px rgba(129, 140, 248, 0.85);
+}
+
+.button-row {
+  margin-bottom: 1.1rem;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.95rem;
+  border: 1px solid rgba(129, 140, 248, 0.9);
+  background: rgba(79, 70, 229, 0.95);
+  color: #eef2ff;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.12s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.7);
+}
+
+.btn.secondary {
+  background: transparent;
+  border-color: rgba(129, 140, 248, 0.9);
+}
+
+.hint {
+  font-size: 0.95rem;
+  color: #c7d2fe;
+  border-top: 1px dashed rgba(129, 140, 248, 0.7);
+  padding-top: 1rem;
+}

@@ -65,6 +65,18 @@ mentees.forEach((mentee) => {
   console.log(`Hello, ${mentee}! Ready to code?`);
 });
 
+let hobbies = ["Yoga", "Boxing", "Reading"];
+
+hobbies.forEach((hobbie) => {
+  console.log(`One of my hobbies is ${hobbie}`);
+});
+
+const favoriteSongs = ["Mist", "Phantom", "Miss Me"];
+
+favoriteSongs.forEach((song) => {
+  console.log(`This is one of my favorite songs ${song}`);
+});
+
 // ==============================================
 // TASK 3 – MAP: TRANSFORM VALUES
 // ==============================================
@@ -89,8 +101,21 @@ let doubleNumbers = numbers.map((number) => number * 2);
 console.log(numbers);
 console.log(doubleNumbers);
 
-const labeledNumbers = numbers.map((number2) => `Value: ${number2}`);
+const labeledNumbers = numbers.map(
+  (labeledNumber) => `Value: ${labeledNumber}`,
+);
 console.log(labeledNumbers);
+
+const menteeNames = ["John", "Jesper", "Joshua"];
+
+const menteeCallBack = menteeNames.map((mentee) => `Mentee: ${mentee}`);
+console.log(menteeCallBack);
+
+const randomNumbers = [3, 6, 8];
+const squaredNumbers = randomNumbers.map(
+  (number) => `Squared number: ${number * number}`,
+);
+console.log(squaredNumbers);
 
 // ==============================================
 // TASK 4 – FILTER: KEEP ONLY SOME VALUES
@@ -100,8 +125,7 @@ console.log(labeledNumbers);
 //          [3, 10, 7, 20, 15, 2].
 
 // STEP 16: Use .filter() to create a new array called bigNumbers
-//          that only keeps numbers greater than or equal to 10.
-
+//          that only keeps numbers greate
 // STEP 17: Log bigNumbers.
 
 // STEP 18: Use .filter() again to create a new array called evenNumbers
@@ -109,4 +133,7 @@ console.log(labeledNumbers);
 
 // STEP 19: Log evenNumbers.
 
-let mixedNumbers = [];
+const mixedNumbers = [3, 10, 7, 29, 15, 2];
+
+const bigNumbers = mixedNumbers.filter((mixedNum) => mixedNum >= 10);
+console.log("These numbers are greater than or equal to:", bigNumbers);

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: linear-gradient(135deg, #0f172a, #facc15, #fb923c);
+  color: #fffbeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.page {
+  max-width: 900px;
+  width: 100%;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: 1.9rem;
+  padding: 2.6rem 2.4rem;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(251, 146, 60, 0.5);
+  border: 1px solid rgba(249, 115, 22, 0.9);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  margin-bottom: 1.4rem;
+  color: #fef3c7;
+  line-height: 1.7;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #fed7aa;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(148, 163, 184, 0.9);
+  background: rgba(15, 23, 42, 0.9);
+  color: #fffbeb;
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: rgba(249, 115, 22, 0.9);
+  box-shadow: 0 0 0 1px rgba(249, 115, 22, 0.7);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.1rem;
+}
+
+.btn {
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(249, 115, 22, 0.9);
+  background: rgba(249, 115, 22, 0.95);
+  color: #0f172a;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.12s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.7);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: #fed7aa;
+}
+
+.display-block {
+  padding: 1rem 1.1rem;
+  border-radius: 1.2rem;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(249, 115, 22, 0.38);
+  margin-bottom: 1rem;
+}
+
+.quote-display {
+  margin-top: 0.4rem;
+  color: #ffedd5;
+}
+
+.hint {
+  font-size: 0.95rem;
+  color: #fed7aa;
+  border-top: 1px dashed rgba(249, 115, 22, 0.7);
+  padding-top: 1rem;
+}

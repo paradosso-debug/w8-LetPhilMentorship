@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Live Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card" id="profileCard">
+        <h1 id="profileNameDisplay"></h1>
+        <p id="profileMoodDisplay" class="mood-line">Current mood: neutral</p>
+        <p id="profileColorDisplay" class="color-line">
+          Favorite color: <span id="colorValueText">none yet</span>
+        </p>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="nameInput">Name</label>
+            <input id="nameInput" type="text" placeholder="Type your name..." />
+          </div>
+
+          <div class="field">
+            <label for="colorInput">Favorite color</label>
+            <input
+              id="colorInput"
+              type="text"
+              placeholder="e.g. blue, purple, gold"
+            />
+          </div>
+
+          <div class="field">
+            <label for="moodSelect">Mood</label>
+            <select id="moodSelect">
+              <option value="neutral" selected>Neutral</option>
+              <option value="happy">Happy</option>
+              <option value="focused">Focused</option>
+              <option value="tired">Tired</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button id="resetProfileBtn" class="btn secondary">
+            Reset Profile
+          </button>
+        </div>
+
+        <p class="hint">
+          Open <code>homework.js</code> and follow each STEP. As you type and
+          change the fields, the profile card should update live.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
