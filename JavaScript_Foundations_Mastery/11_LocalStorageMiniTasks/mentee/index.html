@@ -5,5 +5,61 @@
     <title>localStorage Mini Tasks</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="page">
+      <section class="card" id="storageCard">
+        <h1 class="card-title">localStorage Basics</h1>
+        <p class="card-subtitle">
+          Practice saving tiny pieces of data in your browser so they survive
+          refresh.
+        </p>
+
+        <section class="block">
+          <h2>1. Name Saver</h2>
+          <label class="field-label" for="nameInput">Name</label>
+          <input
+            id="nameInput"
+            type="text"
+            class="text-input"
+            placeholder="Type your name..."
+          />
+          <div class="button-row">
+            <button id="saveNameBtn" class="btn primary">Save Name</button>
+            <button id="loadNameBtn" class="btn ghost">Load Name</button>
+            <button id="clearNameBtn" class="btn ghost">Clear Name</button>
+          </div>
+          <p class="status-line">
+            Saved name:
+            <span id="savedNameDisplay">none yet</span>
+          </p>
+        </section>
+
+        <section class="block">
+          <h2>2. Visit Counter</h2>
+          <p class="status-line">
+            You have opened this page
+            <span id="visitCountText">0</span>
+            time(s).
+          </p>
+        </section>
+
+        <section class="block">
+          <h2>3. Card Theme</h2>
+          <p class="status-line">
+            Current theme:
+            <span id="themeStatusText">light</span>
+          </p>
+          <button id="toggleThemeBtn" class="btn secondary">
+            Toggle Card Theme
+          </button>
+        </section>
+
+        <p class="hint">
+          Open <code>script.js</code> and follow each STEP. Use DevTools →
+          Application → localStorage to see your saved keys.
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

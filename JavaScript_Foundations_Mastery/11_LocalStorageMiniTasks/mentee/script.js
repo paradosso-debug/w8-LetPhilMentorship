@@ -13,7 +13,13 @@
 //         - loadNameBtn (id "loadNameBtn")
 //         - clearNameBtn (id "clearNameBtn")
 //         - savedNameDisplay (id "savedNameDisplay")
-//
+const nameInput = document.getElementById("nameInput"); // <-- SociallyAkward
+const saveNameBtn = document.getElementById("saveNameBtn");
+const loadNameBtn = document.getElementById("loadNameBtn");
+const clearNameBtn = document.getElementById("clearNameBtn");
+const savedNameDisplay = document.getElementById("savedNameDisplay");
+const visitCountText = document.getElementById("visitCountText");
+
 // STEP 2: Add a "click" event listener to saveNameBtn.
 //         Inside the listener:
 //         - Read the current value from nameInput.
@@ -21,6 +27,19 @@
 //         - Update savedNameDisplay.textContent so it shows the saved value.
 //         - (Optional) If the input is empty, you can decide not to save
 //           or show a message like "none yet".
+
+saveNameBtn.addEventListener("click", () => {
+  const currentName = nameInput.value;
+
+  if (currentName === "") {
+    savedNameDisplay.textContent = "none yet";
+    return;
+  }
+
+  localStorage.setItem("savedName", currentName);
+  savedNameDisplay.textContent = currentName;
+});
+
 //
 // STEP 3: Add a "click" event listener to loadNameBtn.
 //         Inside the listener:
@@ -28,6 +47,22 @@
 //         - If it's null (nothing saved), set savedNameDisplay.textContent
 //           to "none yet".
 //         - Otherwise, show the saved value in savedNameDisplay.
+
+loadNameBtn.addEventListener("click", () => {
+  const savedName = localStorage.getItem("savedName");
+
+  savedName === null
+    ? (savedNameDisplay.textContent = "none yet")
+    : (savedNameDisplay.textContent = savedName);
+});
+
+//   if (savedName = null) {
+//     savedNameDisplay.textContent = "none yet";
+//   } else {
+//     savedNameDisplay.textContent = savedName;
+//   }
+// );
+
 //
 // STEP 4: Add a "click" event listener to clearNameBtn.
 //         Inside the listener:
@@ -35,12 +70,24 @@
 //         - Clear the input (set value to an empty string).
 //         - Set savedNameDisplay.textContent back to "none yet".
 
+clearNameBtn.addEventListener("click", () => {
+  localStorage.removeItem("savedName");
+  nameInput.value = "";
+  savedNameDisplay.textContent = "none yet";
+});
+
 // ==============================================
 // TASK 2 – VISIT COUNTER (RUNS ON PAGE LOAD)
 // ==============================================
 //
 // STEP 5: When the script loads, read the current value of
 //         localStorage.getItem("visitCount").
+
+let storedCountVal = localStorage.getItem("visitCount");
+let visitCountVal = storedCountVal === null ? 0 : Number(storedCountVal);
+visitCountVal += 1;
+localStorage.setItem("visitCount", visitCountVal);
+visitCountText.textContent = visitCountVal;
 //
 // STEP 6: If visitCount is null (first visit), treat it as 0.
 //
